@@ -22,6 +22,6 @@
                         "summary" summary}))
                    (.get feed "entries" []))
       template (.get_template (Environment :loader (FileSystemLoader ".")) "index.template.html")
-      readme (markdown (-> (open "README.md") (.read))) 
+      readme (markdown (-> (open "about.md") (.read)))
       technology (markdown (-> (open "technology.md") (.read)))]
   (print (.render template :entries entries :readme readme :technology technology)))
