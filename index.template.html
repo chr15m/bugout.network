@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>bugout.network: tech to protect freedom of expression</title>
+    <title>bugout.network: decentralized tech to protect freedom of expression</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="alternate" type="application/rss+xml" title="Bugout network decentralized tech" href="https://mccormick.cx/news/tags/cryptography.rss" />
   </head>
   <body>
     <header id="header">
@@ -18,27 +19,39 @@
     </header>
 
     <main>
-      <nav>
+      <!-- <nav>
         <ul>
           <li><a href='#technology'>Technology</a></li><li><a href='#posts'>Posts</a></li>
         </ul>
-      </nav>
+      </nav> -->
+
       <section id="content">
-        <?= `markdown README.md`?>
+        {{ readme }}
       </section>
 
       <!-- Signup Form -->
       <script src="https://mccormick.cx/tinysignup.php?list=bugout" data-message="Sign up for updates & releases"></script>
 
       <section id="technology">
-        <?= `markdown technology.md`?>
+        {{ technology }}
       </section>
 
+      {{ beep }}
+
       <section id="posts">
+        <h1>Posts</h1>
+        {% for entry in entries %}
+          <div class="post">
+            <h3><a href="{{entry.url}}">{{entry.title}}</a></h3>
+            <span class="date">{{ entry.date }}</span>
+            <div>{{entry.summary}}</div>
+            <a href="{{entry.url}}">Read more...</a>
+          </div>
+        {% endfor %}
       </section>
 
       <footer>
-        Footer.
+        Twitter RSS email
       </footer>
     </main>
   </body>
