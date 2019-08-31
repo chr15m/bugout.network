@@ -28,6 +28,11 @@ footer {
   text-align: center;
 }
 
+footer a {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 /* 01 Centering */
 
 header,
