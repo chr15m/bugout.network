@@ -9,26 +9,32 @@
   <body>
     <header id="header">
       <h1>
-        tech to protect<br/>
-        freedom of expression
+        decentralized tech<br/>
       </h1>
+      <h2>
+        to protect<br/>
+        freedom of expression
+      </h2>
     </header>
 
     <main>
       <nav>
         <ul>
-          <li><a href='#technology'>Technology</a></li><li><a href='#articles'>Articles</a></li>
+          <li><a href='#technology'>Technology</a></li><li><a href='#posts'>Posts</a></li>
         </ul>
       </nav>
       <section id="content">
         <?= `markdown README.md`?>
       </section>
 
+      <!-- Signup Form -->
+      <script src="https://mccormick.cx/tinysignup.php?list=bugout" data-message="Sign up for updates & releases"></script>
+
       <section id="technology">
         <?= `markdown technology.md`?>
       </section>
 
-      <section id="articles">
+      <section id="posts">
       </section>
 
       <footer>
