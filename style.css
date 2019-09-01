@@ -230,10 +230,6 @@ section li {
   margin-bottom: 0.5em;
 }
 
-p {
-  text-align: justify;
-}
-
 #content {
   margin-top: 0.5em;
 }
@@ -301,6 +297,10 @@ nav ul li a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#posts .post p {
+  text-align: justify;
 }
 
 /* tinysignup */
