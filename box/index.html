@@ -35,10 +35,16 @@
           <li>Run decentralized <a href="https://github.com/chr15m/bugout">Bugout server apps</a>.</li>
         </ul>
 
-        <!-- Signup Form -->
-        <script src="https://mccormick.cx/tinysignup.php?list=bugout" data-message="Sign up to get on the pre-release list."></script>
-
+        <div id="signup" class="tinysignup">
+          <form id="signup-form" method="post" action="https://mccormick.cx/tinysignup.php">
+            <p>Sign up to get on the pre-release list.</p>
+            <input type="hidden" name="list" id="list" value="bugout">
+            <input type="email" id="email" placeholder="Email address..." name="email">
+            <button type="submit" value="Subscribe">✔</button>
+        </form>
         <h3>Spaces are limited as I can only make a few.</h3>
+      </div>
+
 
         <img class="screencast" src="screencast.gif"/>
       </section>
@@ -46,6 +52,7 @@
       <footer>
         <a href="https://twitter.com/mccrmx">Twitter</a> | <a href="https://mccormick.cx/news/tags/cryptography.rss">RSS</a> | <a href="mailto:chris@mccormick.cx">email</a>
       </footer>
+      <script src="https://mccormick.cx/tinysignup.php?list=bugout" data-div="signup" data-form="signup-form"></script>
     </main>
   </body>
 </html>
