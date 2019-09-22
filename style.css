@@ -266,6 +266,21 @@ nav ul li a {
   text-decoration: none;
 }
 
+#bbox {
+  text-align: center;
+}
+
+a.button {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #e81c4f;
+  color: white;
+  border-radius: 4px;
+  padding: 0.75em;
+  font-weight: bold;
+}
+
 #posts .post {
   margin-bottom: 3em;
 }
